@@ -1,3 +1,9 @@
+The **tru.ID** fork has the following improvements/fixes:
+- use `navigator.locks` API to prevent refresh token scenarios where multiple requests are triggered at the same time due to broadcasting on multiple tabs to refresh the session
+- fix the missing `jwks_uri` in the Issuer creation (openid-client library)
+
+In the future if the library maintainers decide to fix these issues we will be able to stop using this fork.
+
 <p align="center">
    <br/>
    <a href="https://next-auth.js.org" target="_blank"><img width="150px" src="https://next-auth.js.org/img/logo/logo-sm.png" /></a>

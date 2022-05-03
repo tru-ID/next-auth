@@ -28,6 +28,8 @@ export async function openidClient(
       token_endpoint: provider.token?.url ?? provider.token,
       // @ts-expect-error
       userinfo_endpoint: provider.userinfo?.url ?? provider.userinfo,
+      // @ts-expect-error
+      jwks_uri: provider.jwks_endpoint,
     })
   }
 
